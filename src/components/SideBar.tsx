@@ -24,13 +24,13 @@ const SideBar = ({ drawerOpen, toggleDrawer }: SideBarProps) => {
   }, []);
 
   const menuItems = [
-    { id: 'Dashboard', text: 'Dashboard', icon: <Icons.Dashboard />, path: '/Dashboard' },
-    { id: 'users', text: 'Usuarios', icon: <Icons.Person />, path: '/Usuarios' },
-    { id: 'companies', text: 'Centros de Trabajo', icon: <Icons.Business />, path: '/CentrosdeTrabajo' },
-    { id: 'internships', text: 'Pasantías', icon: <Icons.Work />, path: '/Pasantias' },
-    { id: 'documentation', text: 'Documentación', icon: <Icons.Description />, path: '/Documentacion' },
-    { id: 'visits', text: 'Visitas', icon: <Icons.Explore />, path: '/Visitas' },
-    { id: 'reports', text: 'Reportes', icon: <Icons.Assessment />, path: '/Reportes' }
+    { id: 'dashboard', text: 'Dashboard', icon: <Icons.Dashboard />, path: '/Dashboard' },
+    { id: 'usuarios', text: 'Usuarios', icon: <Icons.People />, path: '/Usuarios' },
+    { id: 'centros', text: 'Centros de Trabajo', icon: <Icons.Business />, path: '/CentrosdeTrabajo' },
+    { id: 'plazas', text: 'Plazas de Centro', icon: <Icons.Work />, path: '/PlazasCentro' },
+    { id: 'pasantias', text: 'Pasantías', icon: <Icons.School />, path: '/Pasantias' },
+    { id: 'visitas', text: 'Visitas', icon: <Icons.Visibility />, path: '/Visitas' },
+    { id: 'documentacion', text: 'Documentación', icon: <Icons.Description />, path: '/Documentacion' },
   ];
 
   const activeMenu = menuItems.find(item => location.pathname === item.path)?.id || '';

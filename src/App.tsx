@@ -20,6 +20,7 @@ import Supervisors from './pages/dashboardAccess/subPages/Supervisors';
 import Tutors from './pages/dashboardAccess/subPages/Tutors';
 import Documentacion from './pages/dashboardAccess/Documentacion';
 import PlazasCentro from './pages/dashboardAccess/PlazasCentro';
+import Estudiantes from './pages/dashboardAccess/Estudiantes';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/CentrosdeTrabajo" element={<Companies />} />
         <Route path="/Documentacion" element={<Documentacion />} />
         <Route path="/PlazasCentro" element={<PlazasCentro />} />
+        <Route path="/Estudiantes" element={<Estudiantes />} />
       </Routes>
     </BrowserRouter>
   </ThemeProvider>
